@@ -33,9 +33,6 @@ function App() {
     setActiveModal("OPEN_SINGLE_MODAL");
   };
 
-  // const incrementedCount = useMemo(() => {
-  //   return count + 1;
-  // }, [count]);
   const increment = () => {
     dispatch({ type: "increment" });
   };
@@ -55,9 +52,7 @@ function App() {
     <themeContext.Provider value={theme}>
       <div className="p-2">
         <div className="font-bold">Hooks</div>
-        {/* wrap in one component call this function inside the to update the state
-        context globally
-        */}
+
         <button
           onClick={toggleTheme}
           className="border border-black px-2 rounded-md"
@@ -83,11 +78,7 @@ function App() {
         <div>Count: {count}</div>
         <button onClick={() => setCount(incrementedCount)}>Increment</button>
       </div> */}
-      {/* 
-      //reducer in a commom function to an modal 
 
-    
-      */}
       <div className=" flex gap-4 p-4 items-center">
         <div
           onClick={decrement}
