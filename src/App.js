@@ -27,12 +27,10 @@ function App() {
   const [count, setCount] = useState(0);
   const showTeachersModal = () => {
     setActiveModal("OPEN_TEACHERS_MODAL");
-    // dispatch({ type: "OPEN_TEACHERS_MODAL" });
   };
 
   const showSingleModal = () => {
     setActiveModal("OPEN_SINGLE_MODAL");
-    // dispatch({ type: "OPEN_SINGLE_MODAL" });
   };
 
   // const incrementedCount = useMemo(() => {
